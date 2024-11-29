@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Courses</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav>
+    <ul class="menu">
+      <li><a href="home.html">Home</a></li>
+      <li><a href="courses.html">Courses</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Header -->
+  <header>
+    <h1>Course Registration</h1>
+  </header>
+
+  <!-- Form -->
+  <section>
+    <h2>Register for a Course</h2>
+
+    <form id="course-form">
+      <div class="form-group">
+        <label for="full-name">Full Name</label>
+        <input type="text" id="full-name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" required>
+      </div>
+      <div class="form-group">
+        <label for="phone">Phone</label>
+        <input type="tel" id="phone" required>
+      </div>
+      <div class="form-group">
+        <label for="course-date">Course Date & Time</label>
+        <input type="datetime-local" id="course-date" required>
+      </div>
+      <button type="submit">Register</button>
+    </form>
+  </section>
+
+  <!-- Registered Courses -->
+  <section>
+    <h2>Registered Courses</h2>
+
+    <div id="registered-courses">
+      <!-- Registered courses will be displayed here -->
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
